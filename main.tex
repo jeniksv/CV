@@ -1,0 +1,138 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{sample.bib}
+
+\usepackage[czech]{babel}
+\usepackage{csquotes}
+
+\begin{document}
+\name{Milan Veselý}
+\tagline{Software Engineer at Pure Storage and Computer Science student at Matfyz}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{vesely202@gmail.com}
+  \phone{+420 730 906 637}
+  \github{github.com/vesmil}
+  \linkedin{linkedin.com/in/milan-vesely/}
+%  \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{Introduction} I am currently enrolled as a first-year student in the Software Systems master's degree program at Charles University. At the same time I am also working full-time as a software engineer at Pure Storage.
+
+\vspace{4px}
+
+Throughout my Bachelor studies, I have gained practical experience working with companies of various sizes, mostly specializing in C++ development. Despite juggling work and studies, I have maintained an outstanding academic record, I have been repeatedly recognized with scholarships for excellent results and even graduated with honors.
+
+\vspace{4px}
+
+I enjoy problem solving and learning new things, but I don't neglect other important skills such TODO...
+
+\vspace{8px}
+
+\cvsection{Education}
+
+\cvevent{Bachelor in Computer Science}{Charles University}{2020 -- 2023}{Prague}
+
+\cvevent{Masters in Computer Science}{Charles University}{2023 -- now}{Prague}
+
+\vspace{8px}
+
+\cvsection{Extracurricular}
+
+\textbf{Programming Teacher, Code Rebels}
+
+\vspace{2px}
+
+\begin{itemize}
+\item Develop and deliver Python courses for kids, focusing on programming fundamentals, algorithms, and problem-solving.
+\end{itemize}
+
+\vspace{4px}
+
+\textbf{High School Technical Competitions}
+
+\vspace{2px}
+
+\begin{itemize}
+\item Awarded numerous medals for performance in Mathematical Olympiad, Logical Olympiad, and other technical competitions.
+\item Demonstrated strong problem-solving skills and a passion for learning and applying mathematical and logical concepts.
+\end{itemize}
+
+\vspace{4px}
+
+\textbf{Event Organizer}
+
+\vspace{2px}
+
+\begin{itemize}
+\item Led teams of 5 or more to organize cultural and sporting events for hundreds of people, such as muggle quidditch tournament, ice-hockey matches, concerts, and more.
+\end{itemize}
+
+\vspace{8px}
+
+\cvsection{Abilities}
+%\divider
+
+% \divider
+
+\cvskill{ C++}{4}
+\cvskill{ C\#}{3}
+\cvskill{ Python }{2}
+
+\vspace{10px} \ And others such as Git, Linux, Scrum, LaTeX, ...
+
+\vspace{10px} \textit{*The rating is mostly relative}
+
+\clearpage
+
+\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection, but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
