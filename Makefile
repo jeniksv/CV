@@ -12,7 +12,7 @@ $(OUTPUT): $(SOURCES)
 	$(CC) $(MAIN)
 
 clean:
-	rm -f *.aux *.log *.out *.bbl *.blg *.run.xml *.bcf
+	rm -f *.aux *.log *.out *.bbl *.blg *.run.xml *.bcf *.pdf
 
 distclean: clean
 	rm -f $(OUTPUT)
